@@ -1,1 +1,16 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+if (newValue === '') {
+return;
+}
+
+if (newValue != "") {
+g_form.getReference('caller_id', function(caller) {
+if (caller.active == 'false') {
+g_form.showFieldMsg('caller_id', 'User is inactive', 'error');
+} else {
+g_form.hideFieldMsg('caller_id');
+}
+});
+}
+}
 
