@@ -1,0 +1,12 @@
+(function executeRule(current, previous /*null when async*/ ) {
+
+var gr = new GlideRecord('sc_req_item');
+gr.addQuery('sys_id',current.request_item);
+gr.query();
+if(gr.next()){
+// gr.get(current.request_item); 
+gr.assignment_group = current.assignment_group;
+gr.assigned_to = current.assigned_to;
+gr.update();
+}
+})(current, previous);
