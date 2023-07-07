@@ -1,3 +1,4 @@
+// IF assignment grp is present in variables then it is updated in the assignment group and desc is updated. If there is no grp in variable then SC task is assigned to XPOE grp and desc is updated
 (function(current, parent) {
     if (!gs.nil(current.request_item.variables.assignment_group_in_charge)) {
         current.assignment_group = current.request_item.variables.assignment_group_in_charge;
