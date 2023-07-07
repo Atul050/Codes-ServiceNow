@@ -1,0 +1,9 @@
+(function(current, parent) {
+    if (!gs.nil(current.request_item.variables.assignment_group_in_charge)) {
+        current.assignment_group = current.request_item.variables.assignment_group_in_charge;
+        current.description = "Check with application owner and make sure that the necessary modifications are completed. Keep the ticket regularly updated.";
+    } else {
+        current.assignment_group = "a47bf2671b50b3809ddd744ead4bcb39";
+        current.description = "Check with owners and assign accordingly";
+    }
+})(current, parent);
