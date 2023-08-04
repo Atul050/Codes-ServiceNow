@@ -1,0 +1,8 @@
+var answer = [];
+var dept = current.variables.department.getDisplayValue();
+// gs.log('departmet '+dept, 'atul');  // check karo log mei kya value aa rhi hai...
+if(dept == 'IT'){
+    answer.push('e2826bf03710200044e0bfc8bcbe5de0');
+}else{
+        answer.push('ee826bf03710200044e0bfc8bcbe5de6');
+    }
