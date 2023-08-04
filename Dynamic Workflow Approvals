@@ -1,8 +1,22 @@
+// Script for workflow approval based on business Unit:
+
+var answer = [];
+var bu = current.variables.system_business_unit.getDisplayValue();
+if (bu == 'Corporate' || bu == 'LTL') {
+    answer.push('759a399fdb2fa200701a79fdae9619fd');
+} else {
+    answer.push('6eeb6a03dbe03640701a79fdae9619e4');
+}
+
+
+
+// Script for workflow approval based on departments:
+
 var answer = [];
 var dept = current.variables.department.getDisplayValue();
-// gs.log('departmet '+dept, 'atul');  // check karo log mei kya value aa rhi hai...
-if(dept == 'IT'){
-    answer.push('e2826bf03710200044e0bfc8bcbe5de0');
-}else{
-        answer.push('ee826bf03710200044e0bfc8bcbe5de6');
-    }
+//gs.log('department ' + dept, 'atul'); // check karo log mei kya value aa rhi hai...
+if (dept == 'IT' || dept == 'HR') {
+    answer.push('506c0f9cd7011200f2d224837e61030f');
+} else {
+    answer.push('5b7c200d0a640069006b3845b5d0fa7c');
+}
