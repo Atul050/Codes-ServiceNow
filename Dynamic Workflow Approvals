@@ -20,3 +20,13 @@ if (dept == 'IT' || dept == 'HR') {
 } else {
     answer.push('5b7c200d0a640069006b3845b5d0fa7c');
 }
+
+
+Practice:
+var answer = [];
+var dept = current.variables.department.getDisplayValue();
+
+if(dept =="corporate" || dept=="ltl")
+answer.push["sys_id1];
+else
+answer.push["sys_id2];
