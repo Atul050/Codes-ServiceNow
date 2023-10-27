@@ -1,0 +1,12 @@
+            var subject = email.subject.toString().toLowerCase();
+            var email1 = email.body_text;
+            //gs.log('test1' + email1,'atul');
+
+            if ((subject.indexOf("relay") > -1) || (email1.indexOf("relay") > -1)) {
+
+                ritm.variables.type_of_request = 'relay'; // Relay
+            } else if ((subject.indexOf("reweigh") > -1) || (email1.indexOf("reweigh") > -1)) {
+                ritm.variables.type_of_request = 'reweigh'; // Reweigh
+            } else {
+                ritm.variables.type_of_request = 'other'; // None
+            }
