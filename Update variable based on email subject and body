@@ -10,3 +10,4 @@
             } else {
                 ritm.variables.type_of_request = 'other'; // None
             }
+// used in OTC Pune corrections for Request Type field
