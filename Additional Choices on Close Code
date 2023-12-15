@@ -1,0 +1,20 @@
+Additional Close Code for InfoSec Assignment group on Incident Form. Used the UI Policy and created below script of addOption & removeOption
+
+Execute if True condition :
+function onCondition() {
+g_form.addOption('close_code','User Compromised','User Compromised');
+g_form.addOption('close_code','Device Compromised','Device Compromised');
+g_form.addOption('close_code','Correction Applied','Correction Applied');
+g_form.addOption('close_code','Awareness Raised','Awareness Raised');
+g_form.addOption('close_code','Legitimate Activity','Legitimate Activity');
+}
+
+
+Execute if False condition :
+function onCondition() {
+g_form.removeOption('close_code','User Compromised');
+g_form.removeOption('close_code','Device Compromised');
+g_form.removeOption('close_code','Correction Applied');
+g_form.removeOption('close_code','Awareness Raised');
+g_form.removeOption('close_code','Legitimate Activity');
+}
